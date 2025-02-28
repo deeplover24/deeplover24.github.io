@@ -93,3 +93,58 @@
     color: #f3e6d8;
     text-decoration: none;
   }
+
+/* style rules for mobile viewport*/
+
+
+/* style rules to show mobile class and hide tab-desk class*/
+.mobile{
+	display: inline-block;
+}
+
+.tab-desk{
+	display: none;
+}
+
+/* style rules for header*/
+.mobile h1{
+	padding: 2%;
+	text-align: center;
+	font-family: "Emblema One";
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+.mobile h3{
+	padding: 2%;
+	text-align: center;
+	font-family: "Lora"
+}
+/* style rules for main content*/
+main{
+	padding: 2%;
+}
+main p{
+	font-size: 1.25em;
+}
+main h3{
+	padding-top: 2%;
+}
+main ul{
+	list-style-type: square;
+}
+.link{
+	color: #4d3319;
+    	text-decoration: none;
+    	font-weight: bold;
+    	font-style: italic;
+}
+.action{
+	font-size: 1.75em;
+    	font-weight: bold;
+    	text-align: center;
+}
+#contact {
+    text-align: center;
+  }
+
