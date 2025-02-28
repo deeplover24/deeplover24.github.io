@@ -11,6 +11,14 @@
     padding: 0;
     border: 0;
   }
+/*Body Rules reset*/
+   body{
+	background-color: #f6eee4;
+   }
+   img{
+	  max-width: 100%;
+	  display: block;
+	}
 
 /*Style Rules*/
   nav {
