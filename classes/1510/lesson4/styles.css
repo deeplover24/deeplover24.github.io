@@ -63,7 +63,7 @@
     list-style-type: square;
   }
   
-  .link {
+  a {
     color: #4d3319;
     text-decoration: none;
     font-weight: bold;
