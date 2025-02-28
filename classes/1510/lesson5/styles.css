@@ -153,4 +153,16 @@ main ul{
 #contact {
     text-align: center;
   }
-
+.tel-link{
+	background-color: #2a1f14;
+	width: 80%;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tel-link a{
+	color: #f6eee4;
+	font-weight: bold;
+	text-decoration: none;
+}
