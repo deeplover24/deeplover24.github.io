@@ -36,7 +36,7 @@
     	font-size: 1.25em;
     	font-family: Geneva, Arial, sans-serif;
     	font-weight: bold;
-	border-top: 0.5px solid #f6eee4;
+	    border-top: 0.5px solid #f6eee4;
   }
 
   nav ul li a {
@@ -168,7 +168,7 @@ main ul{
 }
 
 /* Media Query for Tablet Viewport. */
-@media (min-width: 620px) {
+@media screen and (min-width: 620px) {
   body {
     background-color: lightblue;
   }
@@ -176,7 +176,7 @@ main ul{
 
 @media print {
   body {
-    background-color: white;
+    display: none;
   }
 }
 
@@ -190,7 +190,7 @@ main ul{
 
 /* Media Query for Desktop Viewport */
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   /* Desktop Viewport: Style rules for nav area */
   nav li {
     font-size: 1.5em;
@@ -216,13 +216,12 @@ main ul{
 
 /* Media Query for Large Desktop Viewports */
 
-@media (min-width: 1921px) {
+@media screen and (min-width: 1921px) {
   /* Style rule for body element */
   body {
     background: linear-gradient(#f6eee4, #78593a);
   }
-
-  /* Style rule for wrapper element */
+  
   #wrapper {
     width: 1920px;
     margin-top: 0;
