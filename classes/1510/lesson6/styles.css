@@ -170,7 +170,7 @@ main ul{
 /* Media Query for Tablet Viewport. */
 @media screen and (min-width: 620px) {
   body {
-    background-color: lightblue;
+    
   }
 }
 
