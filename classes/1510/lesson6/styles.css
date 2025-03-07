@@ -32,8 +32,8 @@
   }
 
   nav ul li {
-    	display: block;
-    	font-size: 1.5em;
+    	display: inline-block;
+    	font-size: 1.25em;
     	font-family: Geneva, Arial, sans-serif;
     	font-weight: bold;
 	border-top: 0.5px solid #f6eee4;
@@ -165,4 +165,82 @@ main ul{
 	color: #f6eee4;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport. */
+@media (min-width: 620px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media print {
+  body {
+    background-color: white;
+  }
+}
+
+.tab-desk {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Media Query for Desktop Viewport */
+
+@media (min-width: 1000px) {
+  /* Desktop Viewport: Style rules for nav area */
+  nav li {
+    font-size: 1.5em;
+  }
+
+  nav li a {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  nav li a:hover {
+    color: #2a1f14;
+    background-color: #f6eee4;
+  }
+
+  /* Desktop Viewport: Style rules for main content */
+  #info ul {
+    margin-left: 5%;
+  }
+}
+
+/* Media Query for Large Desktop Viewports */
+
+@media (min-width: 1921px) {
+  /* Style rule for body element */
+  body {
+    background: linear-gradient(#f6eee4, #78593a);
+  }
+
+  /* Style rule for wrapper element */
+  #wrapper {
+    width: 1920px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Style rule for main element */
+  main {
+    background-color: #f6eee4;
+  }
+}
+
+/* Media query for print */
+@media print {
+  body {
+    background-color: white; /* Set background to white */
+    color: black; /* Set text color to black */
+  }
 }
