@@ -216,14 +216,14 @@ main ul{
 
 /* Media Query for Large Desktop Viewports */
 
-@media screen and (min-width: 1921px) {
+@media screen and (min-width: 1000px) {
   /* Style rule for body element */
   body {
     background: linear-gradient(#f6eee4, #78593a);
   }
   
   #wrapper {
-    width: 1920px;
+    width: 1000px;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: auto;
@@ -239,7 +239,7 @@ main ul{
 /* Media query for print */
 @media print {
   body {
-    background-color: white; /* Set background to white */
-    color: black; /* Set text color to black */
+    background-color: white; 
+    color: black; 
   }
 }
