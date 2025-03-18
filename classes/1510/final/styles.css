@@ -1,0 +1,245 @@
+/* 	
+	Student Name: Tyren
+	File Name: styles.css
+	Date: 2/20/2025
+*/
+
+/*css reset*/
+  body, header, nav, main, footer, img, h1, h3, ul 
+  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+/*Body Rules reset*/
+   body{
+	background-color: #f6eee4;
+   }
+
+   img{
+	  max-width: 100%;
+	  display: block;
+	}
+
+/*Style Rules*/
+  nav {
+    background-color: #2a1f14;
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  nav ul li {
+    	display: inline-block;
+    	font-size: 1.25em;
+    	font-family: Geneva, Arial, sans-serif;
+    	font-weight: bold;
+	    border-top: 0.5px solid #f6eee4;
+  }
+
+  nav ul li a {
+    display: block;
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
+  }
+/*style rules for main p*/
+  main {
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+  }
+  
+  main p {
+    font-size: 1.25em;
+  }
+  
+  main h3 {
+    padding-top: 2%;
+  }
+  
+  main ul {
+    list-style-type: square;
+  }
+  
+  .link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #contact {
+    text-align: center;
+  }
+
+/* style rules for footer*/
+  footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 1% 0%; 
+  }
+  
+  footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+  }
+
+/* style rules for mobile viewport*/
+
+
+/* style rules to show mobile class and hide tab-desk class*/
+.mobile{
+	display: inline-block;
+}
+
+.tab-desk{
+	display: none;
+}
+
+/* style rules for header*/
+.mobile h1{
+	padding: 2%;
+	text-align: center;
+	font-family: "Emblema One", sans-serif;
+
+}
+
+.mobile h3{
+	padding: 2%;
+	text-align: center;
+	font-family: "Lora", serif;
+}
+/* style rules for main content*/
+main{
+	padding: 2%;
+	font-family: 'Lora', serif;
+}
+main p{
+	font-size: 1.25em;
+}
+main h3{
+	padding-top: 2%;
+}
+main ul{
+	list-style-type: square;
+}
+.link{
+	color: #4d3319;
+    	text-decoration: none;
+    	font-weight: bold;
+    	font-style: italic;
+}
+.action{
+	font-size: 1.75em;
+    	font-weight: bold;
+    	text-align: center;
+}
+.round{
+	border-radius: 6px;
+}
+#info{
+	margin-left: 10%;
+}
+#contact {
+    text-align: center;
+  }
+.tel-link{
+	background-color: #2a1f14;
+	width: 80%;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tel-link a{
+	color: #f6eee4;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport. */
+@media screen and (min-width: 620px) {
+  body {
+    background-color: #f6eee4;
+  }
+}
+
+@media print {
+  body {
+    display: none;
+  }
+}
+
+.tab-desk {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Media Query for Desktop Viewport */
+
+@media screen and (min-width: 1000px) {
+  /* Desktop Viewport: Style rules for nav area */
+  nav li {
+    font-size: 1.5em;
+  }
+
+  nav li a {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  nav li a:hover {
+    color: #2a1f14;
+    background-color: #f6eee4;
+  }
+
+  /* Desktop Viewport: Style rules for main content */
+  #info ul {
+    margin-left: 5%;
+  }
+}
+
+/* Media Query for Large Desktop Viewports */
+
+@media screen and (min-width: 1921px) {
+  /* Style rule for body element */
+  body {
+    background: linear-gradient(#f6eee4, #78593a);
+  }
+  
+  #wrapper {
+    width: 1920px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Style rule for main element */
+  main {
+    background-color: #f6eee4;
+  }
+}
+
+/* Media query for print */
+@media print {
+  body {
+    background-color: white; 
+    color: black; 
+  }
+}
