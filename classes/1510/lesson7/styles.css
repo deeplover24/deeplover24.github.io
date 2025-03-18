@@ -243,3 +243,91 @@ main ul{
     color: black; 
   }
 }
+
+/* CSS Reset */
+aside, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* Round Class (assuming this is already defined) */
+.round {
+    border-radius: 50%;
+    /* other styles for round images */
+}
+
+/* New Styles Below .round Class */
+
+/* Style rule for aside element */
+aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #c5a687;
+}
+
+/* Style rule for figure element */
+figure {
+    border: 4px solid #2a1f14;
+    box-shadow: 6px 6px 10px #c5a687;
+    max-width: 400px;
+    margin: 2% auto;
+}
+
+/* Style rule for figcaption element */
+figcaption {
+    padding: 2%;
+    border-top: 4px solid #2a1f14;
+}
+
+/* Tablet Media Query */
+@media (max-width: 768px) {
+    /* Style rule for grid class selector */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* two-column layout */
+        grid-gap: 10px;
+    }
+
+    /* Style rule for aside element in grid */
+    aside {
+        grid-column: 1 / span 2; /* make aside span two columns */
+    }
+}
+
+/* Desktop Media Query */
+@media (min-width: 1024px) {
+    /* Style rule for nav li a:hover */
+    nav li a:hover {
+        opacity: 0.5;
+    }
+
+    /* Style rule for grid class selector */
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* three-column layout */
+        grid-gap: 30px;
+    }
+
+    /* Style rule for aside element in grid */
+    aside {
+        grid-column: 1 / span 3; /* make aside span three columns */
+        font-size: 2em;
+    }
+}
+
+/* Large Desktop Media Query */
+@media (min-width: 1200px) {
+    /* Style rule for grid class selector */
+    .grid {
+        grid-template-columns: repeat(4, 1fr); /* four-column layout */
+    }
+
+    /* Style rule for aside element in grid */
+    aside {
+        grid-column: 1 / span 4; /* make aside span four columns */
+        font-size: 3em;
+    }
+}
