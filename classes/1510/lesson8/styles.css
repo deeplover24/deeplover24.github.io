@@ -237,6 +237,7 @@ aside {
         grid-column: 1 / span 3; /* make aside span three columns */
         font-size: 2em;
     }
+	
     /* Style rules for table */
 	table {
 	  border: 1px solid #2a1f14;      
