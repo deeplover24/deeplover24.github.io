@@ -213,6 +213,25 @@
 	    margin-left: auto;        /* Set left margin to auto */
 	    margin-right: auto;       /* Set right margin to auto */
 	  }
+	.grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* two-column layout */
+        grid-gap: 10px;
+	}
+	
+	/* Style rule for aside element in grid */
+	aside {
+	        grid-column: 1 / span 2; /* make aside span two columns */
+	    }
+	
+	.tab-desk {
+	  display: block;
+	}
+	
+	.mobile, .mobile-tablet {
+	  display: none;
+	}
+
 }
 
 @media print {
@@ -220,25 +239,6 @@
     display: none;
   }
 }
-.grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* two-column layout */
-        grid-gap: 10px;
-    }
-
-/* Style rule for aside element in grid */
-aside {
-        grid-column: 1 / span 2; /* make aside span two columns */
-    }
-
-.tab-desk {
-  display: block;
-}
-
-.mobile, .mobile-tablet {
-  display: none;
-}
-
 /* Media Query for Desktop Viewport */
 
 @media screen and (min-width: 1000px) {
