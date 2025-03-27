@@ -98,11 +98,11 @@
 
 
 /* style rules to show mobile class and hide tab-desk class*/
-.mobile{
+.mobile, .mobile-tablet{
 	display: inline-block;
 }
 
-.tab-desk{
+.tab-desk, .desktop{
 	display: none;
 }
 
@@ -194,14 +194,19 @@ aside {
   display: block;
 }
 
-.mobile {
+.mobile, .mobile-tablet {
   display: none;
 }
 
 /* Media Query for Desktop Viewport */
 
 @media screen and (min-width: 1000px) {
-  /* Desktop Viewport: Style rules for nav area */
+  /* Desktop Viewport: Show desktop class, hide mobile-tablet class */
+
+  .mobile-tablet {
+    display: none;
+  }
+	
   nav li {
     font-size: 1.5em;
   }
@@ -217,7 +222,7 @@ aside {
     color: #2a1f14;
     background-color: #f6eee4;
   }
-nav li a:hover {
+  nav li a:hover {
         opacity: 0.5;
     }
 
@@ -232,6 +237,43 @@ nav li a:hover {
         grid-column: 1 / span 3; /* make aside span three columns */
         font-size: 2em;
     }
+    /* Style rules for table */
+	table {
+	  border: 1px solid #2a1f14;      
+	  border-collapse: collapse;     
+	  margin-top: 0;                  
+	  margin-bottom: 0;               
+	  margin-left: auto;              
+	  margin-right: auto;             
+	}
+	
+	/* Caption Style */
+	caption {
+	  font-size: 1.5em;       
+	  font-weight: bold;      
+	  padding: 1%;            
+	}
+	
+	/* th and td Style */
+	th, td {
+	  border: 1px solid #2a1f14;   
+	  padding: 1%;                  
+	}
+	
+	/* th Style */
+	th {
+	  background-color: #2a1f14;  
+	  color: #fff;                
+	  font-size: 1.15em;          
+	}
+	
+	/* Odd Rows Style */
+	tr:nth-child(odd) {
+	  background-color: #deccba;  
+	}
+
+
+	
   /* Desktop Viewport: Style rules for main content */
   #info ul {
     margin-left: 5%;
