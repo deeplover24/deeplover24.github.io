@@ -1,0 +1,414 @@
+/* 	
+	Student Name: Tyren
+	File Name: styles.css
+	Date: 2/20/2025
+*/
+
+/*css reset*/
+  body, header, nav, main, footer, img, h1, h3, ul 
+  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+/*Body Rules reset*/
+   body{
+	background-color: #f6eee4;
+   }
+
+   img{
+	  max-width: 100%;
+	  display: block;
+	}
+
+/*Style Rules*/
+  nav {
+    background-color: #2a1f14;
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  nav ul li {
+    	display: inline-block;
+    	font-size: 1.25em;
+    	font-family: Geneva, Arial, sans-serif;
+    	font-weight: bold;
+	    border-top: 0.5px solid #f6eee4;
+  }
+
+  nav ul li a {
+    display: block;
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
+  }
+/*style rules for main p*/
+  main {
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+  }
+  
+  main p {
+    font-size: 1.25em;
+  }
+  
+  main h3 {
+    padding-top: 2%;
+  }
+  
+  main ul {
+    list-style-type: square;
+  }
+  
+  .link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #contact, #form h2 {
+    text-align: center;
+  }
+
+  /* Style rules for form elements */
+  fieldset, input, textarea {
+    margin-bottom: 2%; /* Set the bottom margin to 2% */
+  }
+  
+  /* Fieldset legend */
+  fieldset legend {
+    font-weight: bold;   /* Set the font weight to bold */
+    font-size: 1.25em;    /* Set the font size to 1.25em */
+  }
+
+  /* Label selectors */
+  label {
+    display: block;      /* Set the display to block */
+    padding-top: 2%;      /* Set the top padding to 2% */
+  }
+
+  /* Submit button style for mobile */
+  #form #submit {
+    margin-top: 0;        /* Set the top margin to 0 */
+    margin-bottom: 0;     /* Set the bottom margin to 0 */
+    margin-left: auto;    /* Set the left margin to auto */
+    margin-right: auto;   /* Set the right margin to auto */
+    display: block;       /* Set display to block */
+    padding: 2%;          /* Set padding to 2% */
+    background-color: #78593a; /* Set background color */
+    color: #f6eee4;       /* Set the text color */
+    font-size: 1.25em;    /* Set the font size to 1.25em */
+    border-radius: 10px;  /* Set the border radius to 10px */
+  }
+
+/* style rules for footer*/
+  footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 1% 0%; 
+  }
+  
+  footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+  }
+
+/* style rules for mobile viewport*/
+@media only screen and (max-width: 619px) {
+	
+	/* style rules to show mobile class and hide tab-desk class*/
+	.mobile, .mobile-tablet{
+		display: inline-block;
+	}
+	
+	.tab-desk, .desktop{
+		display: none;
+	}
+	
+	/* style rules for header*/
+	.mobile h1{
+		padding: 2%;
+		text-align: center;
+		font-family: "Emblema One", sans-serif;
+	
+	}
+	
+	.mobile h3{
+		padding: 2%;
+		text-align: center;
+		font-family: "Lora", serif;
+	}
+	/* style rules for main content*/
+	main{
+		padding: 2%;
+		font-family: 'Lora', serif;
+	}
+	main p{
+		font-size: 1.25em;
+	}
+	main h3{
+		padding-top: 2%;
+	}
+	main ul{
+		list-style-type: square;
+	}
+	.link{
+		color: #4d3319;
+	    	text-decoration: none;
+	    	font-weight: bold;
+	    	font-style: italic;
+	}
+	.action{
+		font-size: 1.75em;
+	    	font-weight: bold;
+	    	text-align: center;
+	}
+	.round{
+		border-radius: 6px;
+	}
+	#info{
+		margin-left: 10%;
+	}
+	#contact {
+	    text-align: center;
+	  }
+	.tel-link{
+		background-color: #2a1f14;
+		width: 80%;
+		margin-bottom: 0;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tel-link a{
+		color: #f6eee4;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
+/* Media Query for Tablet Viewport. */
+@media screen and (min-width: 620px) 
+{
+	  body {
+	    background-color: #f6eee4;
+	  }
+
+	 /* Tablet Viewport: Style rule for form element */
+	  form {
+	    width: 70%;               /* Set the width of the form to 70% */
+	    margin-top: 0;            /* Set the top margin to 0 */
+	    margin-bottom: 0;         /* Set the bottom margin to 0 */
+	    margin-left: auto;        /* Set left margin to auto */
+	    margin-right: auto;       /* Set right margin to auto */
+	  }
+	.grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* two-column layout */
+        grid-gap: 10px;
+	}
+	
+	/* Style rule for aside element in grid */
+	aside {
+	        grid-column: 1 / span 2; /* make aside span two columns */
+	    }
+	
+	.tab-desk {
+	  display: block;
+	}
+	
+	.mobile, .mobile-tablet {
+	  display: none;
+	}
+
+}
+
+@media print {
+  body {
+    display: none;
+  }
+}
+/* Media Query for Desktop Viewport */
+
+@media screen and (min-width: 1000px) {
+
+  form {
+    width: auto;              
+  }
+
+  .form-grid {
+    display: grid;            
+    grid-template-columns: auto auto; 
+    grid-gap: 20px;   
+  }
+
+  .btn {
+    grid-column: 1 / span 2;  /* Make the button span across 2 grid columns */
+  }
+	
+  .mobile-tablet {
+    display: none;
+  }
+	
+  nav li {
+    font-size: 1.5em;
+  }
+
+  nav li a {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  nav li a:hover {
+    color: #2a1f14;
+    background-color: #f6eee4;
+  }
+  nav li a:hover {
+        opacity: 0.5;
+    }
+
+    /* Style rule for grid class selector */
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* three-column layout */
+        grid-gap: 30px;
+    }
+
+    /* Style rule for aside element in grid */
+    aside {
+        grid-column: 1 / span 3; /* make aside span three columns */
+        font-size: 2em;
+    }
+	
+    /* Style rules for table */
+	table {
+	  border: 1px solid #2a1f14;      
+	  border-collapse: collapse;     
+	  margin-top: 0;                  
+	  margin-bottom: 0;               
+	  margin-left: auto;              
+	  margin-right: auto;             
+	}
+	
+	/* Caption Style */
+	caption {
+	  font-size: 1.5em;       
+	  font-weight: bold;      
+	  padding: 1%;            
+	}
+	
+	/* th and td Style */
+	th, td {
+	  border: 1px solid #2a1f14;   
+	  padding: 1%;                  
+	}
+	
+	/* th Style */
+	th {
+	  background-color: #2a1f14;  
+	  color: #fff;                
+	  font-size: 1.15em;          
+	}
+	
+	/* Odd Rows Style */
+	tr:nth-child(odd) {
+	  background-color: #deccba;  
+	}
+
+
+	
+  /* Desktop Viewport: Style rules for main content */
+  #info ul {
+    margin-left: 5%;
+  }
+}
+/* Media Query for Large Desktop Viewports */
+
+@media screen and (min-width: 1921px) {
+  /* Style rule for body element */
+  body {
+    background: linear-gradient(#f6eee4, #78593a);
+  }
+  
+  #wrapper {
+    width: 1920px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Style rule for main element */
+  main {
+    background-color: #f6eee4;
+  }
+/* Style rule for grid class selector */
+    .grid {
+        grid-template-columns: repeat(4, 1fr); /* four-column layout */
+    }
+
+    /* Style rule for aside element in grid */
+    aside {
+        grid-column: 1 / span 4; /* make aside span four columns */
+        font-size: 3em;
+    }
+}
+
+/* Media query for print */
+@media print {
+  body {
+    background-color: white; 
+    color: black; 
+  }
+}
+
+/* CSS Reset */
+aside, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* Round Class (assuming this is already defined) */
+.round {
+    border-radius: 50%;
+    /* other styles for round images */
+}
+
+/* New Styles Below .round Class */
+
+/* Style rule for aside element */
+aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #c5a687;
+}
+
+/* Style rule for figure element */
+figure {
+    border: 4px solid #2a1f14;
+    box-shadow: 6px 6px 10px #c5a687;
+    max-width: 400px;
+    margin: 2% auto;
+}
+
+/* Style rule for figcaption element */
+figcaption {
+    padding: 2%;
+    border-top: 4px solid #2a1f14;
+}
