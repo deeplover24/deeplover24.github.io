@@ -8,16 +8,36 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Contact</title>
+	<title>"Contact Us – Location | Wild Rescues."</title>
 	<meta charset="utf-8">
+	<meta name="description" content="Contact us at (814)555-8989 or visit us at 8989 Rescue Drive, Ocala, FL for more information.">
 	<link rel="stylesheet" href="styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" type="png" sizes="32x32" href="favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="android-chrome-192.png">
 </head>
 <body>
 	<div id = "wrapper">
+		<!-- Mobile Nav -->
+		<nav class="mobile-nav">
+		    <div id="nav-links">
+		        <a href="index.html">Home</a>
+		        <a href="about.html">About Us</a>
+		        <a href="partnership.html">Partnership</a>
+		        <a href="gallery.html">Gallery</a>
+		        <a href="faqs.html">FAQs</a>
+		        <a href="contacts.html">Contact Us</a>
+		    </div>
+		    <a class="nav-icon" onclick="menu()">
+		        <div id="icon">&#9776;</div>
+		    </a>
+		</nav>
+		
 	    <header> 
 		    <div class = "tab-desk">
-			    <a href="https://deeplover24.github.io/classes/1510/lesson6/index.html"> <img src="baby-hawk.jpg"  alt = "rescued baby hawk"> </a>
+			    <a href="https://deeplover24.github.io/classes/1510/lesson11/index.html"> <img src="baby-hawk.jpg"  alt = "rescued baby hawk"> </a>
 		    </div>
 	
 		    <div class = "mobile">
@@ -26,24 +46,24 @@
 		    </div>
 	    </header>
 	    
-		<nav>
+		<nav class="tab-desk">
 		        <ul>
-		            <li><a href="https://deeplover24.github.io/classes/1510/lesson6/index.html">
+		            <li><a href="https://deeplover24.github.io/classes/1510/lesson11/index.html">
 		                Home</a> </li>
 		            
-		            <li><a href= https://deeplover24.github.io/classes/1510/lesson6/about.html>
+		            <li><a href= https://deeplover24.github.io/classes/1510/lesson11/about.html>
 		                About Us </a></li>
 		            
-		            <li><a href= https://deeplover24.github.io/classes/1510/lesson6/about.html>
+		            <li><a href= https://deeplover24.github.io/classes/1510/lesson11/partnership.html>
 		                Partnership</a></li>
 		            
-		            <li><a href = https://deeplover24.github.io/main/classes/1510/lesson6/gallery.html>
+		            <li><a href = https://deeplover24.github.io/classes/1510/lesson11/gallery.html>
 		                Gallery</a></li>
 		            
-		            <li><a href = https://deeplover24.github.io/classes/1510/lesson6/faqs.html>
+		            <li><a href = https://deeplover24.github.io/classes/1510/lesson11/faqs.html>
 		                FAQs</a></li>
 		            
-		            <li><a href = https://deeplover24.github.io/classes/1510/lesson6/contacts.html>
+		            <li><a href = https://deeplover24.github.io/classes/1510/lesson11/contacts.html>
 		                Contact </a></li>
 		        </ul>
 		</nav>
@@ -55,9 +75,79 @@
 		        <h2>You can reach us at:</h2>
 	            	<p class = "tel-link round mobile" ><a href="tel:8145558989">(814) 555-8989</a></p>
 			<p class="tab-desk">(814) 555-9228</p>
-	            	<p>Email: <a class = "link" href="mailto:contact@ratewildrescues.net">contact@ratewildrescues.net</a></p>
+	            	<p>Email: <a class = "link" href="mailto:contact@ratewildrescues.net">Contact@ratewildrescues.net</a></p>
 	           	<p>Address: <a class = "link" href = "https://www.google.com/maps/place/Rescue+Dr,+Florida+32420/@30.660436,-85.3486468,17z/data=!3m1!4b1!4m6!3m5!1s0x8893198e4af39ec1:0x8c30f2f483a07692!8m2!3d30.660436!4d-85.3460719!16s%2Fg%2F1tdkbvw4?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D " >
 	                8989 Rescue Drive, Ocala, FL 34471 </a></p>
+		    </div>
+		    <div id = "form">
+			    <h2>
+				    <p>Complete the form below and we will contact you soon</p>
+			    </h2>
+				    <form class="form-grid">
+					    <!-- Start Form -->
+					    <!-- First Fieldset: Contact Information -->
+						  <fieldset>
+						    <legend>Contact Information</legend>
+						    
+						    <!-- First Name -->
+						    <label for="fName">First Name:</label>
+						    <input type="text" name="fName" id="fName">
+						    
+						    <!-- Last Name -->
+						    <label for="lName">Last Name:</label>
+						    <input type="text" name="lName" id="lName">
+						    
+						    <!-- Name of Business -->
+						    <label for="bName">Name of Business:</label>
+						    <input type="text" name="bName" id="bName">
+						    
+						    <!-- Email -->
+						    <label for="email">Email:</label>
+						    <input type="email" name="email" id="email">
+						    
+						    <!-- Phone -->
+						    <label for="phone">Phone:</label>
+						    <input type="tel" name="phone" id="phone">
+						  </fieldset>
+						
+						  <!-- Second Fieldset: Additional Information -->
+						  <fieldset>
+						    <legend>Additional Information</legend>
+						    
+						    <!-- Paragraph for the question -->
+						    <p>I would like more information about:</p>
+						    
+						    <!-- Volunteering Option -->
+						    <label for="vol">
+						      <input type="radio" name="info" id="vol" value="Volunteering">
+						      Volunteering
+						    </label>
+						    
+						    <!-- Sponsorship Opportunities Option -->
+						    <label for="sponsor">
+						      <input type="radio" name="info" id="sponsor" value="Sponsorship Opportunities">
+						      Sponsorship Opportunities
+						    </label>
+						    
+						    <!-- Wildlife Option -->
+						    <label for="wild">
+						      <input type="radio" name="info" id="wild" value="Wildlife">
+						      Wildlife
+						    </label>
+						    
+						    <!-- Other Option -->
+						    <label for="other">
+						      <input type="radio" name="info" id="other" value="Other">
+						      Other, please specify below.
+						    </label>
+						    
+						    <!-- Questions Textarea -->
+						    <label for="questions">What questions do you have for us?</label>
+						    <textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+						  </fieldset>
+					   <!-- Submit Button -->
+  					   <button type="submit" id="submit" value="Submit" class="btn">Submit</button>
+				    </form>
 		    </div>
 		    
 	    </main>
@@ -68,4 +158,5 @@
 	        <a href=mailto:contact@wildresuces.net> contact@wildresuces.net</a>
 	    </footer>
 	</div>
+<script src="script.js"></script>
 </body>
