@@ -24,23 +24,23 @@ function menu() {
 //Function to display the first answer
 function ans1() {
     heading.style.display = "block";
-    answer.textContent = "Step back and observe the situation for a few minutes. Wait to see if a parent arrives. If the animal is in immediate danger of a predator or is in the road, remove the baby and bring to a rescue center.";
+    answer.textContent = "Just about any cooking tool you can imagine and more , strainers , pots , pans , forks , spoons , mixing spoons , whisk , bottles , cups , knives , blenders, air friers and much much more !!!";
 }
 
 //Function to display the second answer
 function ans2() {
     heading.style.display = "block";
-    answer.textContent = "You cannot tell if an animal has rabies simply by seeing it. A test must be performed to determine if an animal has rabies. Do not approach wildlife that you suspect might be rabid. Contact us to have the animal removed.";
+    answer.textContent = "1 week return policy for unsuned products";
 }
 
 //Function to display the third answer
 function ans3() {
     heading.style.display = "block";
-    answer.textContent = "No. This is a myth. The parents will retrieve the baby bird and place it back in its nest. If the parents do not return, contact us.";
+    answer.textContent = "anywhere from 1 day to 2 weeks , we do our best to ship the product as fast as posible";
 }
 
 //Function to display the fourth answer
 function ans4() {
     heading.style.display = "block";
-    answer.textContent = "We need volunteers to help feed animals, care for animals, and clean animal pins. We also accept donations. ";
+    answer.textContent = "We are always looking for job applicants , go to contacts to contact us and learn more ";
 }
